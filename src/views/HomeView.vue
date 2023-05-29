@@ -1,8 +1,9 @@
 <template>
   <div class="background">
+    <NavigationBar/>
     <section class="container">
       <img class="logo" src="../assets/cloudpunchTransparent.png" alt="Cloudpunch Logo">
-      <p class="paragraph">siobhan bonardi.</p>
+      <h4>siobhan bonardi</h4>
       <p class="paragraph">full stack web developer.</p>
       <p class="paragraph">based in edmonton.</p>
       <p class="paragraph">collects stephen king books.</p>
@@ -12,18 +13,17 @@
 </template>
 
 <script>
-
+import NavigationBar from '@/components/NavigationBar.vue'
   export default {
     name: 'HomeView',
-
     components: {
-      
+      NavigationBar
     },
   }
 </script>
 
 <style scoped>
-  div{
+  .background{
     height: 100vh;
   }
 
@@ -32,15 +32,18 @@
   }
 
   .container {
-  text-align: center;
-  padding-top: 150px;
+    text-align: center;
+    color: #b43b62;
+    font-size: 40pt;
+    padding-top: 100px;
+    font-family: playfairDisplay;
 }
 
+h4{
+  color: #c75b7d;
+}
   .paragraph {
     margin: 0;
     padding: 0;
-    color: #A53860;
-    font-size: 40pt;
-    font-family: lobster;
 }
 </style>
