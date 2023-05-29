@@ -9,15 +9,20 @@
       <p class="paragraph">collects stephen king books.</p>
       <p class="paragraph">loves to travel.</p>
     </section>
+    <section class="contactForm">
+      <ContactMe/>
+    </section>
   </div>
 </template>
 
 <script>
 import NavigationBar from '@/components/NavigationBar.vue'
+import ContactMe from '@/components/ContactMe.vue'
   export default {
     name: 'HomeView',
     components: {
-      NavigationBar
+      NavigationBar,
+      ContactMe
     },
   }
 </script>
@@ -33,17 +38,21 @@ import NavigationBar from '@/components/NavigationBar.vue'
 
   .container {
     text-align: center;
-    color: #b43b62;
+    color: #C0B9DD;
     font-size: 40pt;
     padding-top: 100px;
     font-family: playfairDisplay;
 }
 
 h4{
-  color: #c75b7d;
+  color: #FF7E6B;
 }
   .paragraph {
     margin: 0;
     padding: 0;
 }
+
+/* .contactForm{
+  margin-top: 50px;
+} */
 </style>

@@ -4,7 +4,7 @@
         <v-spacer></v-spacer>
         <v-toolbar-title class="titleName">there are other worlds than these</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn text color="secondary" v-for="link in links" :key="link.name" :href="link.url" target="_blank">{{ link.name }}</v-btn>
+        <v-btn text color="primary" v-for="link in links" :key="link.name" :href="link.url" target="_blank">{{ link.name }}</v-btn>
         <v-spacer></v-spacer>
     </v-app-bar>
 </template>
@@ -16,7 +16,7 @@
         return {
         links: [
             { name: 'Github', url: 'https://github.com/cloudpunchx' },
-            { name: 'Website 2', url: 'https://www.example2.com' },
+            { name: 'LinkedIn', url: 'https://www.linkedin.com/in/siobhanbonardi/' },
         ],
         };
     },
@@ -27,6 +27,6 @@
     .titleName{
         font-family: lobster;
         font-size: 16pt;
-        color: #A53860;
+        color: #C0B9DD;
     }
 </style>
