@@ -1,6 +1,7 @@
 <template>
   <div class="background">
     <NavigationBar/>
+
     <section class="container">
       <img class="logo" src="../assets/cloudpunchTransparent.png" alt="Cloudpunch Logo">
       <h4>siobhan bonardi</h4>
@@ -9,27 +10,32 @@
       <p class="paragraph">collects stephen king books.</p>
       <p class="paragraph">loves to travel.</p>
     </section>
+
     <section class="contactForm">
       <ContactMe/>
     </section>
+
+    <FooterBar/>
   </div>
 </template>
 
 <script>
 import NavigationBar from '@/components/NavigationBar.vue'
 import ContactMe from '@/components/ContactMe.vue'
+import FooterBar from '@/components/FooterBar.vue'
   export default {
     name: 'HomeView',
     components: {
       NavigationBar,
-      ContactMe
+      ContactMe,
+      FooterBar
     },
   }
 </script>
 
 <style scoped>
   .background{
-    height: 100vh;
+    height: 100%;
   }
 
   .logo{
@@ -51,8 +57,4 @@ h4{
     margin: 0;
     padding: 0;
 }
-
-/* .contactForm{
-  margin-top: 50px;
-} */
 </style>

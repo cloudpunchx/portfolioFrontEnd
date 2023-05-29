@@ -1,8 +1,9 @@
 <template>
     <div class="container">
         <div class="welcomeContainer">
-            <h3>Let's chat. Tell me about your project.</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi totam esse mollitia reiciendis dolore animi unde perferendis alias, quisquam at autem? Perspiciatis ipsa inventore sapiente.</p>
+            <h3>Let's chat.</h3>
+            <p>Feel free to get in touch with me to request a copy of my resume or to initiate a conversation about your project, aiming to collaborate and generate a quote.
+                You can also reach out to me directly via email at siobhanbonardi@gmail.com.</p>
         </div>
 
         <div class="centered-container">
@@ -58,10 +59,10 @@
                             <v-textarea
                             background-color="rgba(247, 244, 234, 0.3)"
                             color="primary"
-                            label="Label"
+                            label="Message"
                             name="content" 
                             placeholder="Enter Your Message" 
-                            cols="100" 
+                            cols="50" 
                             rows="5" 
                             filled
                             clearable
@@ -89,63 +90,32 @@
 </script>
 
 <style scoped>
-/* .centered-container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #F7F4EA;
-}
-
-.contactForm {
-    width: 50%;
-    padding: 25px;
-    margin: 25px;
-    background-color: #c0b9dd;
-    border-radius: 15px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.v-text-field{
-    border-radius: 5px;
-} */
-
-.container {
-    display: flex;
 }
 
 .welcomeContainer {
-    flex: 1;
-    /* play with padding */
+    text-align: start;
     padding: 150px;
     margin: 25px;
-    background-color: #F7F4EA;
+    background-color: #f7f4ea;
+    max-width: 900px;
 }
 
 .centered-container {
-    flex: 2;
-    justify-content: center;
-    align-items: center;
-    background-color: #F7F4EA;
+    flex: 1;
+    background-color: #f7f4ea;
+    max-width: 900px;
+    margin-top: 100px;
 }
 
-.contactForm {
-    padding: 25px;
-    margin: 25px;
-    /* background-color: #c0b9dd;
-    border-radius: 15px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-}
-
-.v-text-field {
-    border-radius: 5px;
-}
-
-h3{
+h3 {
     font-size: 40pt;
 }
 
-p{
+p {
     font-size: 18pt;
 }
 </style>
