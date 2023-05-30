@@ -3,7 +3,7 @@
         <div class="welcomeContainer">
             <h3>Let's chat.</h3>
             <p>Feel free to get in touch with me to request a copy of my resume or to initiate a conversation about your project, aiming to collaborate and generate a quote.
-                You can also reach out to me directly via email at siobhanbonardi@gmail.com.</p>
+                You can also reach out to me directly via email at <a href="mailto:siobhanbonardi@gmail.com">siobhanbonardi@gmail.com</a></p>
         </div>
 
         <div class="centered-container">
@@ -69,7 +69,8 @@
                             ></v-textarea>
 
                             <v-col cols="12">
-                                <v-btn color="primary">Submit</v-btn>
+                                <v-btn color="primary"
+                                >Submit</v-btn>
                             </v-col>
                             
                         </v-row>
@@ -85,7 +86,15 @@
 
 <script>
     export default {
-        name: "ContactMe"
+        name: "ContactMe",
+    data() {
+        return {
+                
+            };
+    },
+    methods: {
+
+        },
     }
 </script>
 
@@ -112,10 +121,32 @@
 }
 
 h3 {
-    font-size: 40pt;
+    font-size: 50pt;
+    font-family: lobster;
+    color: #FF7E6B;
 }
 
 p {
     font-size: 18pt;
 }
+
+a{
+    text-decoration: none;
+    transition: font-size 0.2s;
+}
+
+a:hover{
+    font-size: 20pt;
+}
+
+a:active{
+    font-size: 20pt;
+}
+
+.v-btn{
+    font-size: 15pt;
+    font-family: playfair;
+    width: 130px;
+}
+
 </style>
