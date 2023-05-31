@@ -57,4 +57,10 @@ h4{
     margin: 0;
     padding: 0;
 }
+
+.contactForm{
+  margin-top: 250px;
+  margin-bottom: 250px;
+  background-color: #FF7E6B;
+}
 </style>

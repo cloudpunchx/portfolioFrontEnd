@@ -14,16 +14,13 @@
 
 <style scoped>
 .v-footer {
-    background: linear-gradient(to top, #C0B9DD, rgba(192, 185, 221, 0));
+    background: #C0B9DD;
     text-align: center;
     width: 100%;
-    height: 125px;
-    padding: 5px;
-    margin-top: auto;
 }
 
 .imgContainer{
-    margin-top: 65px;
+    margin-top: 10px;
 }
 
 img {
