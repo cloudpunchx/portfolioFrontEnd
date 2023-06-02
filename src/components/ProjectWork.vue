@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <v-container>
-            <v-row>
+            <v-row dense>
                 <v-col
                 cols="12"
                 sm="4"
@@ -60,6 +60,7 @@
 <style scoped>
 .container {
     display: flex;
+    margin: 80px;
 }
 
 a {
@@ -119,4 +120,5 @@ p {
 .contentContainer{
     padding: 25px;
 }
+
 </style>

@@ -29,6 +29,10 @@
       <ProjectWork/>
     </section>
 
+    <section class="aboutMe">
+      <AboutMe/>
+    </section>
+
     <section class="contactForm">
       <ContactMe/>
     </section>
@@ -40,6 +44,7 @@
 <script>
 import NavigationBar from '@/components/NavigationBar.vue'
 import ProjectWork from '@/components/ProjectWork.vue'
+import AboutMe from '@/components/AboutMe.vue'
 import ContactMe from '@/components/ContactMe.vue'
 import FooterBar from '@/components/FooterBar.vue'
   export default {
@@ -47,6 +52,7 @@ import FooterBar from '@/components/FooterBar.vue'
     components: {
       NavigationBar,
       ProjectWork,
+      AboutMe,
       ContactMe,
       FooterBar
     },
@@ -115,6 +121,10 @@ h4{
 .projectWork{
   margin-top: 250px;
   background-color: #C0B9DD;
+}
+
+.aboutMe{
+  background-color: #F7F4EA;
 }
 
 .contactForm{

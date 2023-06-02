@@ -1,7 +1,7 @@
 <template>
     <v-app-bar app color="secondary">
         <v-spacer></v-spacer>
-        <v-toolbar-title class="titleName">there are other worlds than these</v-toolbar-title>
+        <v-toolbar-title class="titleName">siobhan bonardi</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn text v-for="link in links" :key="link.name" :href="link.url" target="_blank">{{ link.name }}</v-btn>
         <v-spacer></v-spacer>
