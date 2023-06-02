@@ -11,6 +11,10 @@
       <p class="paragraph">loves to travel.</p>
     </section>
 
+    <section class="projectWork">
+      <ProjectWork/>
+    </section>
+
     <section class="contactForm">
       <ContactMe/>
     </section>
@@ -21,12 +25,14 @@
 
 <script>
 import NavigationBar from '@/components/NavigationBar.vue'
+import ProjectWork from '@/components/ProjectWork.vue'
 import ContactMe from '@/components/ContactMe.vue'
 import FooterBar from '@/components/FooterBar.vue'
   export default {
     name: 'HomeView',
     components: {
       NavigationBar,
+      ProjectWork,
       ContactMe,
       FooterBar
     },
@@ -58,8 +64,13 @@ h4{
     padding: 0;
 }
 
-.contactForm{
+.projectWork{
   margin-top: 250px;
+  background-color: #C0B9DD;
+}
+
+.contactForm{
+  /* margin-top: 250px; */
   margin-bottom: 250px;
   background-color: #FF7E6B;
 }

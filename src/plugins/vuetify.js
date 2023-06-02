@@ -12,6 +12,7 @@ const vuetify = new Vuetify({
                 secondary: '#C0B9DD',
                 accent: '#FFFBFE',
                 error: '#b71c1c',
+                yellow: '#ffd819',
             },
         },
     },

@@ -164,7 +164,6 @@ import axios from "axios";
 
 .centered-container {
     flex: 1;
-    background-color: #f7f4ea;
     max-width: 900px;
     margin-top: 100px;
 }
@@ -192,6 +191,7 @@ a{
 
 a:hover{
     font-size: 20pt;
+    color: #ffd819;
 }
 
 a:active{
@@ -208,8 +208,7 @@ a:active{
 }
 
 .v-btn:hover{
-    color: #FF7E6B;
-    font-size: 16pt;
+    color: #ffd819;
     width: 150px;
 }
 
