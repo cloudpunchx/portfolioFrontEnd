@@ -87,8 +87,9 @@
                             </v-col>
 
                             <v-col cols="12">
-                                <v-btn
-                                >Submit</v-btn>
+                                <v-btn rounded large
+                                >Submit
+                                </v-btn>
                             </v-col>
                             
                         </v-row>
@@ -157,7 +158,6 @@ import axios from "axios";
 .welcomeContainer {
     text-align: start;
     padding: 150px;
-    margin: 25px;
     background-color: #FF7E6B;
     max-width: 900px;
 }
@@ -181,7 +181,7 @@ p {
 
 .email{
     /* need to fix color */
-    color: whitesmoke;
+    color: #3e3561;
 }
 
 a{
@@ -201,8 +201,7 @@ a:active{
 .v-btn{
     font-size: 15pt;
     font-weight: bold;
-    font-family: playfair;
-    width: 130px;
+    width: 150px;
     color: #FF7E6B;
     background-color: whitesmoke;
 }

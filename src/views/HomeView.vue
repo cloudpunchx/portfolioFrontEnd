@@ -1,10 +1,24 @@
 <template>
   <div class="background">
-    <NavigationBar/>
+    <div class="header">
+      <NavigationBar/>
+    </div>
 
     <section class="container">
       <img class="logo" src="../assets/cloudpunchTransparent.png" alt="Cloudpunch Logo">
       <h4>siobhan bonardi</h4>
+      <div class="imgContainer">
+        <v-img
+        src="../assets/stars1.png"
+        alt="Star"
+        class="stars1"
+        ></v-img>
+        <v-img
+        src="../assets/stars2.png"
+        alt="Star"
+        class="stars2"
+        ></v-img>
+      </div>
       <p class="paragraph">full stack web developer.</p>
       <p class="paragraph">based in edmonton.</p>
       <p class="paragraph">collects stephen king books.</p>
@@ -46,6 +60,40 @@ import FooterBar from '@/components/FooterBar.vue'
 
   .logo{
     width: 5vw;
+  }
+
+  .imgContainer{
+    position: relative;
+    height: 100%;
+    animation: twinklingAnimation 6s infinite;
+  }
+
+  @keyframes twinklingAnimation {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+
+  .stars1{
+    width: 100px;
+    position: absolute;
+    top: 11%;
+    left: 30%;
+    transform: translate(-25%, 50%);
+    max-width: 100%;
+  }
+
+  .stars2{
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-80%, 240%);
+    max-width: 100%;
   }
 
   .container {

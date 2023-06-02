@@ -1,6 +1,5 @@
 <template>
-    <v-app-bar app flat color="secondary">
-        <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+    <v-app-bar app color="secondary">
         <v-spacer></v-spacer>
         <v-toolbar-title class="titleName">there are other worlds than these</v-toolbar-title>
         <v-spacer></v-spacer>
