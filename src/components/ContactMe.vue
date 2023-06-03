@@ -180,8 +180,7 @@ p {
 }
 
 .email{
-    /* need to fix color */
-    color: #3e3561;
+    color: #000000;
 }
 
 a{

@@ -60,7 +60,7 @@
 <style scoped>
 .container {
     display: flex;
-    margin: 80px;
+    padding: 50px;
 }
 
 a {
@@ -119,6 +119,7 @@ p {
 
 .contentContainer{
     padding: 25px;
+    background-color: #F7F4EA;
 }
 
 </style>

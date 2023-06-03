@@ -1,11 +1,11 @@
 <template>
     <div>
-        <v-container fluid>
+        <v-container class="sectionContainer" fluid>
             <v-row>
                 <v-col cols="12" md="6">
                     <div class="imgContainer">
                         <v-img
-                        src="../assets/siobhanVenice.jpg"
+                        src="../assets/siobhanVeniceCropped.jpg"
                         alt="Siobhan Bonardi"
                         class="profileImg"
                         ></v-img>
@@ -13,7 +13,9 @@
                 </v-col>
                 <v-col cols="12" md="6">
                     <div class="profileContainer">
-                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam autem minus laboriosam ipsa, magnam fugit, ullam commodi quasi ratione non assumenda nam fuga vero doloremque? Illum sint blanditiis velit quos.</p>
+                        <p class="paragraph"><span class="intro">Hello World!</span> I'm Siobhan Bonardi, a software developer based in Edmonton, Alberta. I have a Full-Stack
+                        Development Diploma from Innotech College where I graduated in March 2023.</p>
+                        <p class="paragraph"></p>
                     </div>
                 </v-col>
             </v-row>
@@ -28,24 +30,37 @@ export default {
 </script>
 
 <style scoped>
+.sectionContainer{
+    padding: 100px;
+}
+
 .imgContainer {
     background-color: #f7f4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profileImg {
-    width: 300px;
-    border: 5px solid #ff7e6b;
+    max-width: 400px;
+    max-height: 100%;
+    border: 8px solid #ff7e6b;
     border-radius: 50% 50% 0 0;
 }
 
-.paragraph {
-    width: 100%;
+.intro{
+    font-family: lobster;
 }
 
-@media (min-width: 960px) {
-/* Adjust the breakpoint as needed */
+.paragraph {
+    color: #ff7e6b;
+    font-size: 18pt;
+    font-family: playfair;
+}
+
+/* @media (min-width: 960px) {
     .profileContainer {
         margin-top: 50px;
     }
-}
+} */
 </style>
