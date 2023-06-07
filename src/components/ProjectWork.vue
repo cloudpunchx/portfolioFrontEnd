@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <v-container>
-            <v-row dense class="card-row">
+            <v-row dense>
                 <v-col
                 cols="12"
                 sm="4"
@@ -10,6 +10,7 @@
                     class="card"
                     shaped
                     elevation="5"
+                    color="#F7F4EA"
                     >
                         <v-img
                         src="../assets/cloudpunchdSS.png"
@@ -31,13 +32,14 @@
                 </v-col>
 
                 <v-col
-                class="card"
                 cols="12"
                 sm="4"
                 >
                     <v-card
+                    class="card"
                     shaped
                     elevation="5"
+                    color="#F7F4EA"
                     >
                         <v-img
                         src="../assets/portfolioSS.png"
@@ -139,7 +141,6 @@ p {
 
 .contentContainer{
     padding: 25px;
-    background-color: #F7F4EA;
     flex: 1;
 }
 
@@ -147,14 +148,7 @@ p {
     border-bottom: 2px solid #C0B9DD;
 }
 
-.card-row{
-    display: flex;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
+.v-card {
+    height: 100%;
 }
 </style>
-
-<!-- working on styling cards to same height -->
