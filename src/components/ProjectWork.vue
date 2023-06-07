@@ -1,17 +1,18 @@
 <template>
     <div class="container">
         <v-container>
-            <v-row dense>
+            <v-row dense class="card-row">
                 <v-col
                 cols="12"
                 sm="4"
                 >
                     <v-card
+                    class="card"
                     shaped
                     elevation="5"
                     >
                         <v-img
-                        src="https://media.distractify.com/brand-img/2Ykrh7vPe/0x0/servantseries-1645214277281.jpg"
+                        src="../assets/cloudpunchdSS.png"
                         aspect-ratio="1"
                         >
                         </v-img>
@@ -28,24 +29,43 @@
                         </div>
                     </v-card>
                 </v-col>
-                <v-col>
+
+                <v-col
+                class="card"
+                cols="12"
+                sm="4"
+                >
                     <v-card
-                    class="pa-2"
-                    outlined
-                    tile
+                    shaped
+                    elevation="5"
                     >
-                    Second
+                        <v-img
+                        src="../assets/portfolioSS.png"
+                        aspect-ratio="1"
+                        class="portfolioImg"
+                        >
+                        </v-img>
+                        <div class="contentContainer">
+                            <h6><a href="https://cloudpunch.ca/#/" target="_blank">Portfolio</a></h6>
+                            <p class="subHeading">my portfolio | may 2023 - present</p>
+                            <p>My personal portfolio website where you can view my work and contact me.</p>
+                            <p><a class="websiteLink" href="https://cloudpunch.ca/#/" target="_blank">cloudpunch.ca</a></p>
+                            <p class="subHeading subHeading2">Javascript | Vue.js | Vuetify | HTML | CSS | SCSS | Apache | PM2</p>
+                            <p><a class="githubLink" href="https://github.com/cloudpunchx/portfolioFrontEnd" target="_blank">Front End Code | GitHub</a></p>
+                        </div>
                     </v-card>
                 </v-col>
+
                 <v-col>
                     <v-card
-                    class="pa-2"
+                    class="card"
                     outlined
                     tile
                     >
                     Third
                     </v-card>
                 </v-col>
+
             </v-row>
         </v-container>
     </div>
@@ -120,6 +140,21 @@ p {
 .contentContainer{
     padding: 25px;
     background-color: #F7F4EA;
+    flex: 1;
 }
 
+.portfolioImg{
+    border-bottom: 2px solid #C0B9DD;
+}
+
+.card-row{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
 </style>
+
+<!-- working on styling cards to same height -->
