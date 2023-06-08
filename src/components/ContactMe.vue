@@ -8,7 +8,7 @@
 
         <div class="centered-container">
             <div class="contactForm">
-                <v-form v-model="valid">
+                <v-form>
                     <v-container class="form-container">
                         <v-row dense>
                             <v-col
@@ -35,7 +35,6 @@
                             <v-text-field
                             color="white"
                             v-model="email"
-                            :rules="emailRules"
                             label="E-mail"
                             background-color="rgba(247, 244, 234, 0.5)"
                             required

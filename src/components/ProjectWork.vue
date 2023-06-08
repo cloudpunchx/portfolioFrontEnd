@@ -58,13 +58,30 @@
                     </v-card>
                 </v-col>
 
-                <v-col>
+                <v-col
+                cols="12"
+                sm="4"
+                >
                     <v-card
                     class="card"
-                    outlined
-                    tile
+                    shaped
+                    elevation="5"
+                    color="#F7F4EA"
                     >
-                    Third
+                        <v-img
+                        src="../assets/portfolioSS.png"
+                        aspect-ratio="1"
+                        class="portfolioImg"
+                        >
+                        </v-img>
+                        <div class="contentContainer">
+                            <h6><a href="https://cloudpunch.ca/#/" target="_blank">Portfolio</a></h6>
+                            <p class="subHeading">my portfolio | may 2023 - present</p>
+                            <p>My personal portfolio website where you can view my work and contact me.</p>
+                            <p><a class="websiteLink" href="https://cloudpunch.ca/#/" target="_blank">cloudpunch.ca</a></p>
+                            <p class="subHeading subHeading2">Javascript | Vue.js | Vuetify | HTML | CSS | SCSS | Apache | PM2</p>
+                            <p><a class="githubLink" href="https://github.com/cloudpunchx/portfolioFrontEnd" target="_blank">Front End Code | GitHub</a></p>
+                        </div>
                     </v-card>
                 </v-col>
 

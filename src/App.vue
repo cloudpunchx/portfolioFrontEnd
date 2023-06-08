@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 html{
-  background-color: rgb(42, 84, 121);
+  background-color: #F7F4EA;
 }
 </style>
 

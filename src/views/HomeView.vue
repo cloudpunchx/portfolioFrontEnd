@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <div class="header">
+    <div>
       <NavigationBar/>
     </div>
 
@@ -60,62 +60,60 @@ import FooterBar from '@/components/FooterBar.vue'
 </script>
 
 <style scoped>
-  .background{
-    height: 100%;
-  }
+.background{
+  height: 100%;
+}
 
-  .logo{
-    width: 5vw;
-  }
-
-  .imgContainer{
-    position: relative;
-    height: 100%;
-    animation: twinklingAnimation 6s infinite;
-  }
-
-  @keyframes twinklingAnimation {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-
-
-  .stars1{
-    width: 100px;
-    position: absolute;
-    top: 11%;
-    left: 30%;
-    transform: translate(-25%, 50%);
-    max-width: 100%;
-  }
-
-  .stars2{
-    width: 100px;
-    position: absolute;
-    top: 40%;
-    left: 65%;
-    transform: translate(-80%, 240%);
-    max-width: 100%;
-  }
-
-  .container {
-    text-align: center;
-    color: #C0B9DD;
-    font-size: 40pt;
-    padding-top: 100px;
-    font-family: playfairDisplay;
+.container {
+  text-align: center;
+  color: #C0B9DD;
+  font-size: 40pt;
+  padding-top: 100px;
+  font-family: playfairDisplay;
+}
+.logo{
+  width: 5vw;
 }
 
 h4{
   color: #FF7E6B;
 }
-  .paragraph {
-    margin: 0;
-    padding: 0;
+
+.imgContainer{
+  position: relative;
+  height: 100%;
+  animation: twinklingAnimation 6s infinite;
+}
+
+@keyframes twinklingAnimation {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.stars1{
+  width: 100px;
+  position: absolute;
+  top: 11%;
+  left: 30%;
+  transform: translate(-25%, 50%);
+  max-width: 100%;
+}
+
+.stars2{
+  width: 100px;
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  transform: translate(-80%, 240%);
+  max-width: 100%;
+}
+
+.paragraph {
+  margin: 0;
+  padding: 0;
 }
 
 .projectWork{
@@ -128,8 +126,19 @@ h4{
 }
 
 .contactForm{
-  /* margin-top: 250px; */
-  margin-bottom: 250px;
   background-color: #FF7E6B;
+}
+
+@media only screen and (min-width: 1px){
+/* Breakpoint for Mobile */
+
+}
+
+@media only screen and (min-width: 700px){
+/* Breakpoint for Tablet */
+}
+
+@media only screen and (min-width: 1000px){
+/* Breakpoint for Desktop */
 }
 </style>
