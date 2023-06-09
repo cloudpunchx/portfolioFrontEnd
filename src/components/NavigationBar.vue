@@ -5,28 +5,36 @@
         v-model="drawer"
         absolute
         temporary
-        :style="{ width: isMobile ? '100vw' : 'auto' }"
+        left
         >
-            <v-list nav dense>
+            <v-list
+            nav 
+            dense>
                 <v-list-item-group>
                     <v-list-item>
                         <v-list-item-icon>
                             <img src="../assets/github-mark-white.png" alt="github logo">
                         </v-list-item-icon>
-                        <v-list-item-title class="listItem">GitHub</v-list-item-title>
+                        <v-list-item-title class="listItem" 
+                        style="font-size: 17pt; font-family: playfair; "
+                        >GitHub</v-list-item-title>
                     </v-list-item>
         
                     <v-list-item>
                         <v-list-item-icon>
                             <img src="../assets/In-White-72.png" alt="LinkedIn logo">
                         </v-list-item-icon>
-                        <v-list-item-title class="listItem">LinkedIn</v-list-item-title>
+                        <v-list-item-title class="listItem" 
+                        style="font-size: 17pt; font-family: playfair;"
+                        >LinkedIn</v-list-item-title>
                     </v-list-item>
                 </v-list-item-group>
             </v-list>
         </v-navigation-drawer>
-    
-        <v-app-bar app color="secondary" :style="{ marginLeft: isMobile && drawer ? '100%' : 0 }">
+        
+        <!-- The below code was in the v-app-bar -->
+        <!-- :style="{ marginLeft: isMobile && drawer ? '100%' : 0 }" -->
+        <v-app-bar app color="secondary" >
             <v-app-bar-nav-icon v-show="isMobile" @click="toggleDrawer"></v-app-bar-nav-icon>
     
             <v-spacer></v-spacer>
@@ -67,7 +75,6 @@
 .navDrawer{
     background-color: #FF7E6B;
 }
-
 .listItem{
     color: whitesmoke;
 }
