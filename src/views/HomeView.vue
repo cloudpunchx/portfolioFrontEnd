@@ -71,9 +71,6 @@ import FooterBar from '@/components/FooterBar.vue'
   padding-top: 100px;
   font-family: playfairDisplay;
 }
-.logo{
-  width: 5vw;
-}
 
 h4{
   color: #FF7E6B;
@@ -93,23 +90,23 @@ h4{
     opacity: 1;
   }
 }
-.stars1{
+/* .stars1{
   width: 100px;
   position: absolute;
   top: 11%;
   left: 30%;
   transform: translate(-25%, 50%);
   max-width: 100%;
-}
+} */
 
-.stars2{
+/* .stars2{
   width: 100px;
   position: absolute;
   top: 40%;
   left: 65%;
   transform: translate(-80%, 240%);
   max-width: 100%;
-}
+} */
 
 .paragraph {
   margin: 0;
@@ -131,6 +128,32 @@ h4{
 
 @media only screen and (min-width: 1px){
 /* Breakpoint for Mobile */
+  .logo{
+    width: 25vw;
+  }
+
+  .container {
+    font-size: 30pt;
+    padding-top: 80px;
+  }
+
+  .stars1{
+    width: 65px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-20%, 80%);
+    max-width: 100%;
+  }
+
+  .stars2{
+    width: 50px;
+    position: absolute;
+    top: 100%;
+    left: 75%;
+    transform: translate(-50%, 500%);
+    max-width: 100%;
+  }
 
 }
 
@@ -140,5 +163,32 @@ h4{
 
 @media only screen and (min-width: 1000px){
 /* Breakpoint for Desktop */
+
+  .logo{
+    width: 5vw;
+  }
+
+  .container {
+    font-size: 40pt;
+    padding-top: 100px;
+  }
+
+  .stars1{
+    width: 100px;
+    position: absolute;
+    top: 11%;
+    left: 30%;
+    transform: translate(-25%, 50%);
+    max-width: 100%;
+  }
+
+  .stars2{
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-80%, 240%);
+    max-width: 100%;
+  }
 }
 </style>

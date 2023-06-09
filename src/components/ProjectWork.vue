@@ -58,7 +58,7 @@
                     </v-card>
                 </v-col>
 
-                <v-col
+                <!-- <v-col
                 cols="12"
                 sm="4"
                 >
@@ -83,7 +83,7 @@
                             <p><a class="githubLink" href="https://github.com/cloudpunchx/portfolioFrontEnd" target="_blank">Front End Code | GitHub</a></p>
                         </div>
                     </v-card>
-                </v-col>
+                </v-col> -->
 
             </v-row>
         </v-container>
@@ -168,4 +168,17 @@ p {
 .v-card {
     height: 100%;
 }
+
+@media only screen and (min-width: 1px){
+/* Breakpoint for Mobile */
+}
+
+@media only screen and (min-width: 700px){
+/* Breakpoint for Tablet */
+}
+
+@media only screen and (min-width: 1000px){
+/* Breakpoint for Desktop */
+}
+
 </style>

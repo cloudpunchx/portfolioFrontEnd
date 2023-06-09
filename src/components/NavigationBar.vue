@@ -32,8 +32,6 @@
             </v-list>
         </v-navigation-drawer>
         
-        <!-- The below code was in the v-app-bar -->
-        <!-- :style="{ marginLeft: isMobile && drawer ? '100%' : 0 }" -->
         <v-app-bar app color="secondary" >
             <v-app-bar-nav-icon v-show="isMobile" @click="toggleDrawer"></v-app-bar-nav-icon>
     
@@ -77,6 +75,10 @@
 }
 .listItem{
     color: whitesmoke;
+}
+
+.listItem:hover{
+    color: #ffd819;
 }
 .titleName {
     font-family: lobster;
