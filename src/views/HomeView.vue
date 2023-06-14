@@ -129,7 +129,7 @@ h4{
 @media only screen and (min-width: 1px){
 /* Breakpoint for Mobile */
   .logo{
-    width: 25vw;
+    width: 90px;
   }
 
   .container {
@@ -157,15 +157,17 @@ h4{
 
 }
 
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 500px){
 /* Breakpoint for Tablet */
+
+
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 800px){
 /* Breakpoint for Desktop */
 
   .logo{
-    width: 5vw;
+    width: 125px;
   }
 
   .container {

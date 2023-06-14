@@ -147,37 +147,6 @@ import axios from "axios";
 </script>
 
 <style scoped>
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FF7E6B;
-}
-
-.welcomeContainer {
-    text-align: start;
-    padding: 150px;
-    background-color: #FF7E6B;
-    max-width: 900px;
-}
-
-.centered-container {
-    flex: 1;
-    max-width: 900px;
-    margin-top: 100px;
-}
-
-h3 {
-    font-size: 50pt;
-    font-family: lobster;
-    color: whitesmoke;
-}
-
-p {
-    font-size: 18pt;
-    color: whitesmoke;
-}
-
 .email{
     color: #000000;
 }
@@ -196,17 +165,76 @@ a:active{
     font-size: 20pt;
 }
 
-.v-btn{
-    font-size: 15pt;
-    font-weight: bold;
-    width: 150px;
-    color: #FF7E6B;
-    background-color: whitesmoke;
+@media (min-width: 1px) {
+    .container {
+        align-items: center;
+        background-color: #FF7E6B;
+    }
+    .welcomeContainer {
+        padding: 10px;
+        background-color: #FF7E6B;
+    }
+
+    h3 {
+        font-size: 35pt;
+        font-family: lobster;
+        color: whitesmoke;
+    }
+    p {
+        font-size: 14pt;
+        color: whitesmoke;
+    }
+
+    .v-btn{
+        font-size: 13pt;
+        font-weight: bold;
+        width: 120px;
+        color: #FF7E6B;
+        background-color: whitesmoke;
+    }
+
+    .v-btn:hover{
+        color: #ffd819;
+        width: 120px;
+    }
 }
 
-.v-btn:hover{
-    color: #ffd819;
-    width: 150px;
+@media (min-width: 500px) {
+
 }
 
+@media (min-width: 800px) {
+    .welcomeContainer {
+        text-align: start;
+        padding: 150px;
+        max-width: 900px;
+    }
+    .centered-container {
+        flex: 1;
+        max-width: 900px;
+        margin-top: 100px;
+    }
+
+    h3 {
+        font-size: 50pt;
+    }
+    p {
+        font-size: 18pt;
+    }
+    .v-btn{
+        font-size: 15pt;
+        font-weight: bold;
+        width: 150px;
+    }
+
+    .v-btn:hover{
+        width: 150px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 </style>
