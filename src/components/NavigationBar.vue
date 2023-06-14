@@ -6,8 +6,10 @@
         absolute
         temporary
         left
+        :style="{ position: drawer ? 'fixed' : 'absolute' }"
         >
             <v-list
+            class="listItems"
             nav 
             dense>
                 <v-list-item-group>
@@ -70,6 +72,7 @@
 </script>
     
 <style scoped>
+
 .navDrawer{
     background-color: #FF7E6B;
 }
