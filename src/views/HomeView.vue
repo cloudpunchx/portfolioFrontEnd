@@ -90,23 +90,6 @@ h4{
     opacity: 1;
   }
 }
-/* .stars1{
-  width: 100px;
-  position: absolute;
-  top: 11%;
-  left: 30%;
-  transform: translate(-25%, 50%);
-  max-width: 100%;
-} */
-
-/* .stars2{
-  width: 100px;
-  position: absolute;
-  top: 40%;
-  left: 65%;
-  transform: translate(-80%, 240%);
-  max-width: 100%;
-} */
 
 .paragraph {
   margin: 0;

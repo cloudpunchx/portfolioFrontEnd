@@ -1,5 +1,3 @@
-<!-- need to finish bio -->
-
 <template>
     <div>
         <v-container class="sectionContainer" fluid>
@@ -17,10 +15,14 @@
                     <div class="profileContainer">
                         <p class="paragraph"><span class="intro">Hello World!</span> I'm Siobhan Bonardi, a software developer based in Edmonton, Alberta. I have a Full-Stack
                         Development Diploma from Innotech College where I graduated in March 2023.</p>
-                        <p class="paragraph">I love creating logos using Cricut Design Space, as well as exploring my creativity with Adobe Illustrator, Adobe InDesign, and GIMP. Since I started diving into full stack development,
-                            it's been fun to actually bring my ideas to life starting from scratch.
+                        <p class="paragraph">I've always loved exploring my creative side through various design tools such as Cricut Design Space, Adobe Illustrator, Adobe InDesign, and GIMP. 
+                            Since venturing into the world of full stack development, it's been so fun bringing my ideas to life.
+                            Creating well-rounded and efficient APIs, optimizing database queries, and designing sleek and modern UIs have become my passion. 
+                            I take pride in blending my design skills with technical expertise to deliver captivating digital experiences.
                         </p>
-                        <p class="paragraph">I absolutely <span class="intro">love</span> to travel.</p>
+                        <p class="paragraph">In my free time I love gaming with my husband, watching horror movies, and thrift shopping. And I absolutely <span class="intro">love</span> to travel.
+                            
+                        </p>
                     </div>
                 </v-col>
             </v-row>
@@ -84,12 +86,13 @@ export default {
     }
 
     .paragraph {
-        font-size: 18pt;
+        font-size: 17pt;
     }
 
     .profileContainer{
         width: 80%;
         padding: 50px;
+        text-align: start;
     }
 }
 </style>

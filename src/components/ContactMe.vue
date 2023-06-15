@@ -66,11 +66,11 @@
                             md="12"
                             >
                             <v-textarea
-                            :value="message"
-                            background-color="rgba(247, 244, 234, 0.5)"
                             color="white"
+                            v-model="message"
+                            :value="message"
                             label="Message"
-                            name="content" 
+                            background-color="rgba(247, 244, 234, 0.5)"
                             placeholder="Enter Your Message" 
                             cols="50" 
                             rows="5" 
@@ -86,7 +86,10 @@
                             </v-col>
 
                             <v-col cols="12">
-                                <v-btn rounded large
+                                <v-btn 
+                                rounded
+                                large
+                                @click="submitContactForm"
                                 >Submit
                                 </v-btn>
                             </v-col>
@@ -120,8 +123,7 @@ import axios from "axios";
         methods: {
             submitContactForm() {
                 axios.request({
-                    // UPDATE URL ENDPOINT WHEN BUILT
-                    url: this.apiUrl+"/user",
+                    url: this.apiUrl+"/contact-form",
                     method: "POST",
                     data: {
                         name: this.name,
@@ -130,10 +132,11 @@ import axios from "axios";
                         message: this.message,
                     }
                 }).then((response)=>{
-                    this.feedbackMsg = response;
+                    this.feedbackMsg = response.data;
                     this.clearForm();
                 }).catch((error)=>{
-                    this.feedbackMsg = error;
+                    this.feedbackMsg = error.response.data;
+                    this.clearForm();
                 })
             },
             clearForm(){
@@ -147,9 +150,6 @@ import axios from "axios";
 </script>
 
 <style scoped>
-.email{
-    color: #000000;
-}
 
 a{
     text-decoration: none;
@@ -157,12 +157,12 @@ a{
 }
 
 a:hover{
-    font-size: 20pt;
+    font-size: 20.5pt;
     color: #ffd819;
 }
 
 a:active{
-    font-size: 20pt;
+    font-size: 20.5pt;
 }
 
 @media (min-width: 1px) {
@@ -173,6 +173,13 @@ a:active{
     .welcomeContainer {
         padding: 10px;
         background-color: #FF7E6B;
+    }
+
+    .email{
+        font-size: 14pt;
+        color: whitesmoke;
+        position: relative;
+        overflow: hidden;
     }
 
     h3 {
@@ -206,13 +213,46 @@ a:active{
 @media (min-width: 800px) {
     .welcomeContainer {
         text-align: start;
-        padding: 150px;
-        max-width: 900px;
+        padding: 70px;
+        max-width: 800px;
+        margin-bottom: 100px;
     }
     .centered-container {
         flex: 1;
-        max-width: 900px;
-        margin-top: 100px;
+        max-width: 630px;
+    }
+
+    .email{
+        font-size: 20pt;
+        display: inline-block;
+    }
+
+        /* Animation for 'ripple' background color change effect on email link */
+    .email::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #C0B9DD;
+        animation: ripple 2s infinite;
+    }
+
+    /* Animation for 'ripple' background color change effect on email link */
+    @keyframes ripple {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(2);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(3);
+            opacity: 0;
+        }
     }
 
     h3 {
