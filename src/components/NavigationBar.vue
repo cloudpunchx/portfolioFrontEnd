@@ -50,23 +50,23 @@
     export default {
         name: "NavigationBar",
         data() {
-        return {
-            links: [
-            { name: 'Github', url: 'https://github.com/cloudpunchx' },
-            { name: 'LinkedIn', url: 'https://www.linkedin.com/in/siobhanbonardi/' },
-            ],
-            drawer: false,
-        };
+            return {
+                links: [
+                    { name: 'Github', url: 'https://github.com/cloudpunchx' },
+                    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/siobhanbonardi/' },
+                ],
+                drawer: false,
+            };
         },
         computed: {
-        isMobile() {
-            return this.$vuetify.breakpoint.smAndDown;
-        },
+            isMobile() {
+                return this.$vuetify.breakpoint.smAndDown;
+            },
         },
         methods: {
-        toggleDrawer() {
-            this.drawer = !this.drawer;
-        },
+            toggleDrawer() {
+                this.drawer = !this.drawer;
+            },
         },
     };
 </script>

@@ -4,7 +4,8 @@
             <p class="link">
                 <a class="link" href="https://github.com/cloudpunchx">Github</a> | 
                 <a class="link" href="https://www.linkedin.com/in/siobhanbonardi/">LinkedIn</a> | 
-                <a class="link" href="mailto:siobhanbonardi@gmail.com">siobhanbonardi@gmail.com</a>
+                <a class="link" href="mailto:siobhanbonardi@gmail.com">siobhanbonardi@gmail.com</a> |
+                © 2023 | Web Design by Siobhan Bonardi 
             </p>
         </div>
         <div class="imgContainer">

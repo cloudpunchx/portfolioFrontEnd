@@ -15,13 +15,13 @@
                     <div class="profileContainer">
                         <p class="paragraph"><span class="intro">Hello World!</span> I'm Siobhan Bonardi, a software developer based in Edmonton, Alberta. I have a Full-Stack
                         Development Diploma from Innotech College where I graduated in March 2023.</p>
-                        <p class="paragraph">I've always loved exploring my creative side through various design tools such as Cricut Design Space, Adobe Illustrator, Adobe InDesign, and GIMP. 
-                            Since venturing into the world of full stack development, it's been so fun bringing my ideas to life.
+                        <p class="paragraph">
+                            I've always loved crafting by hand and creating digital designs using Adobe Illustrator, Adobe InDesign, and GIMP.
+                            Since starting my full stack journey, I take pride in blending my design skills with technical knowledge to deliver captivating digital experiences.
                             Creating well-rounded and efficient APIs, optimizing database queries, and designing sleek and modern UIs have become my passion. 
-                            I take pride in blending my design skills with technical expertise to deliver captivating digital experiences.
                         </p>
-                        <p class="paragraph">In my free time I love gaming with my husband, watching horror movies, and thrift shopping. And I absolutely <span class="intro">love</span> to travel.
-                            
+                        <p class="paragraph">I <span class="intro">love</span> traveling, summers in Italy are my favourite! 
+                            When I'm not traveling, I like gaming with my husband, watching horror movies, and thrifting.
                         </p>
                     </div>
                 </v-col>
