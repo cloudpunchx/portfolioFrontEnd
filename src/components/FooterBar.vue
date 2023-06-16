@@ -27,19 +27,31 @@
     width: 100%;
 }
 
-img {
-    width: 200px;
-}
-
-.link{
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 15pt;
-    font-family: playfair;
-}
-
 .link:hover{
     color: #FF7E6B;
     font-size: 16pt;
+}
+
+@media (min-width: 1px) {
+    img {
+        width: 180px;
+    }
+
+    .link{
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 11pt;
+        font-family: playfair;
+    }
+}
+
+@media (min-width: 1000px) {
+    img {
+        width: 200px;
+    }
+
+    .link{
+        font-size: 15pt;
+    }
 }
 </style>

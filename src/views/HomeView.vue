@@ -133,7 +133,7 @@ h4{
     width: 50px;
     position: absolute;
     top: 100%;
-    left: 75%;
+    left: 82%;
     transform: translate(-50%, 500%);
     max-width: 100%;
   }

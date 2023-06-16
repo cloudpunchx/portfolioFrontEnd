@@ -146,6 +146,15 @@ import axios from "axios";
                 this.message = "";
             },
         },
+        mounted() {
+            setTimeout(() => {
+                this.feedbackMsg = '';
+                }, 60000); // Hide after 1 minute
+        },
+        beforeDestroy() {
+            // hide message when page is closed
+            this.feedbackMsg = "";
+        }
     }
 </script>
 
