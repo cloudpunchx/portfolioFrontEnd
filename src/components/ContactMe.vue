@@ -160,21 +160,27 @@ import axios from "axios";
 
 <style scoped>
 
-a{
+/* The position and overflow are for the animation on the email */
+.email{
+    color: whitesmoke;
     text-decoration: none;
     transition: font-size 0.2s;
-}
-
-a:hover{
-    font-size: 20.5pt;
-    color: #ffd819;
-}
-
-a:active{
-    font-size: 20.5pt;
+    position: relative;
+    overflow: hidden;
 }
 
 @media (min-width: 1px) {
+    .email{
+        font-size: 1.2rem;
+    }
+    .email:hover{
+        font-size: 1.3rem;
+        color: #ffd819;
+    }
+    .email:active{
+        font-size: 1.3rem;
+    }
+
     .container {
         align-items: center;
         background-color: #FF7E6B;
@@ -184,59 +190,68 @@ a:active{
         background-color: #FF7E6B;
     }
 
-    .email{
-        font-size: 14pt;
-        color: whitesmoke;
-        position: relative;
-        overflow: hidden;
-    }
-
     h3 {
-        font-size: 35pt;
+        font-size: 3rem;
         font-family: lobster;
         color: whitesmoke;
     }
+
     p {
-        font-size: 14pt;
+        font-size: 1.2rem;
         color: whitesmoke;
     }
 
     .v-btn{
-        font-size: 13pt;
+        font-size: 1.1rem;
         font-weight: bold;
-        width: 120px;
+        width: 150px;
         color: #FF7E6B;
         background-color: whitesmoke;
     }
 
     .v-btn:hover{
-        color: #ffd819;
-        width: 120px;
+        color: #9185bd;
     }
-}
-
-@media (min-width: 500px) {
-
 }
 
 @media (min-width: 800px) {
+    h3 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (min-width: 1100px) {
     .welcomeContainer {
         text-align: start;
-        padding: 70px;
-        max-width: 800px;
+        padding: 50px;
+        max-width: 500px;
         margin-bottom: 100px;
     }
     .centered-container {
-        flex: 1;
         max-width: 630px;
     }
 
-    .email{
-        font-size: 20pt;
-        display: inline-block;
+    h3 {
+        font-size: 3.5rem;
     }
 
-        /* Animation for 'ripple' background color change effect on email link */
+    p {
+        font-size: 1.4rem;
+    }
+
+    .email{
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+    .email:hover{
+        font-size: 1.6rem;
+        color: #ffd819;
+    }
+    .email:active{
+        font-size: 1.6rem;
+    }
+
+    /* Animation for 'ripple' background color change effect on email link */
     .email::after {
         content: '';
         position: absolute;
@@ -264,26 +279,25 @@ a:active{
         }
     }
 
-    h3 {
-        font-size: 50pt;
-    }
-    p {
-        font-size: 18pt;
-    }
     .v-btn{
-        font-size: 15pt;
-        font-weight: bold;
-        width: 150px;
+        font-size: 1.3rem;
     }
 
     .v-btn:hover{
-        width: 150px;
+        font-size: 1.4rem;
+        width: 165px;
     }
 
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    .welcomeContainer {
+        max-width: 700px;
     }
 }
 </style>
