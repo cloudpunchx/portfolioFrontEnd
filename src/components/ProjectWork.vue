@@ -53,9 +53,36 @@
                                 <p class="subHeading">my portfolio | may 2023 - present</p>
                                 <p>My personal portfolio website where you can view my work and contact me.</p>
                                 <p><a class="websiteLink" href="https://cloudpunch.ca/#/" target="_blank">cloudpunch.ca</a></p>
-                                <p class="subHeading subHeading2">Javascript | Vue.js | Vuetify | HTML | CSS | SCSS | Apache | PM2</p>
+                                <p class="subHeading subHeading2">Javascript | Vue.js | Vuetify | HTML | CSS | SCSS | Python | Flask | MariaDB | SQL | Apache | PM2</p>
                                 <p><a class="githubLink" href="https://github.com/cloudpunchx/portfolioFrontEnd" target="_blank">Front End Code | GitHub</a></p>
                                 <p class="githubLink2"><a class="githubLink" href="https://github.com/cloudpunchx/portfoliobackend.git" target="_blank">Back End Code | GitHub</a></p>
+                            </div>
+                        </v-card>
+                    </v-col>
+
+                    <v-col
+                    cols="12"
+                    sm="4"
+                    >
+                        <v-card
+                        class="card"
+                        shaped
+                        elevation="5"
+                        color="#F7F4EA"
+                        >
+                            <v-img
+                            src="../assets/calculatorImg.jpg"
+                            aspect-ratio="1"
+                            class="calculatorImg"
+                            >
+                            </v-img>
+                            <div class="contentContainer">
+                                <h6><a class="titleName" href="https://calculator.cloudpunch.ca/#/" target="_blank">Simple Calculator</a></h6>
+                                <p class="subHeading">calculator | june 2023</p>
+                                <p>A very simple calculator.</p>
+                                <p><a class="websiteLink" href="https://calculator.cloudpunch.ca/#/" target="_blank">calculator.cloudpunch.ca</a></p>
+                                <p class="subHeading subHeading2">Javascript | Vue.js | Vuetify | HTML | CSS | SCSS | Apache | PM2</p>
+                                <p><a class="githubLink" href="https://github.com/cloudpunchx/simplecalculator.git" target="_blank">Front End Code | GitHub</a></p>
                             </div>
                         </v-card>
                     </v-col>
@@ -100,10 +127,6 @@ a:active{
     transition: font-size 0.2s;
 }
 
-.websiteLink:hover{
-    font-size: 25pt;
-    color: #ffd819;
-}
 
 .githubLink{
     font-size: 16pt;
@@ -123,7 +146,7 @@ a:active{
     flex: 1;
 }
 
-.portfolioImg{
+.portfolioImg, .calculatorImg{
     border-bottom: 2px solid #C0B9DD;
 }
 
@@ -148,6 +171,9 @@ a:active{
 
     .websiteLink{
         font-size: 18pt;
+    }
+    .websiteLink:hover{
+        font-size: 19pt;
     }
 }
 
@@ -177,6 +203,9 @@ a:active{
 
     .websiteLink{
         font-size: 22pt;
+    }
+    .websiteLink:hover{
+        font-size: 23pt;
     }
 }
 
