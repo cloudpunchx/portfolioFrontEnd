@@ -11,7 +11,7 @@ const routes = [
     component: HomeView,
     meta: [
       {
-        title: "Siobhan Bonardi"
+        title: "Siobhan Bonardi | Web Developer"
       },
       {
         name: "description",

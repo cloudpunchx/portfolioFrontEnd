@@ -19,9 +19,3 @@ const vuetify = new Vuetify({
 });
 
 export default vuetify;
-
-
-
-
-// documentation
-// https://v2.vuetifyjs.com/en/features/theme/#light-and-dark
