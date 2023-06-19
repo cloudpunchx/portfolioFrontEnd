@@ -201,13 +201,21 @@ p {
 /* Breakpoint for Desktop */
 
     .titleName{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .websiteLink{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .websiteLink:hover{
-        font-size: 2.1rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 1260px){
+/* Breakpoint for Desktop */
+
+    .titleName{
+        font-size: 3.1rem;
     }
 }
 
