@@ -6,23 +6,13 @@
 
     <section class="container">
       <img class="logo" src="../assets/cloudpunchTransparent.png" alt="Cloudpunch Logo">
-      <h4>siobhan bonardi</h4>
-      <div class="imgContainer">
-        <v-img
-        src="../assets/stars1.png"
-        alt="Star"
-        class="stars1"
-        ></v-img>
-        <v-img
-        src="../assets/stars2.png"
-        alt="Star"
-        class="stars2"
-        ></v-img>
+      <div class="textContainer">
+        <h4>siobhan bonardi</h4>
+        <p class="paragraph">full stack web developer.</p>
+        <p class="paragraph">based in edmonton.</p>
+        <p class="paragraph">collects stephen king books.</p>
+        <p class="paragraph">loves to travel.</p>
       </div>
-      <p class="paragraph">full stack web developer.</p>
-      <p class="paragraph">based in edmonton.</p>
-      <p class="paragraph">collects stephen king books.</p>
-      <p class="paragraph">loves to travel.</p>
     </section>
 
     <section class="projectWork">
@@ -65,6 +55,7 @@ import FooterBar from '@/components/FooterBar.vue'
 }
 
 .container {
+  position: relative;
   text-align: center;
   color: #C0B9DD;
   font-size: 40pt;
@@ -75,20 +66,9 @@ import FooterBar from '@/components/FooterBar.vue'
 h4{
   color: #FF7E6B;
 }
-
-.imgContainer{
+.textContainer{
   position: relative;
-  height: 100%;
-  animation: twinklingAnimation 6s infinite;
-}
-
-@keyframes twinklingAnimation {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
+  z-index: 2;
 }
 
 .paragraph {
@@ -120,24 +100,6 @@ h4{
     padding-top: 80px;
   }
 
-  .stars1{
-    width: 65px;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    transform: translate(-20%, 80%);
-    max-width: 100%;
-  }
-
-  .stars2{
-    width: 50px;
-    position: absolute;
-    top: 100%;
-    left: 82%;
-    transform: translate(-50%, 500%);
-    max-width: 100%;
-  }
-
 }
 
 @media only screen and (min-width: 500px){
@@ -157,23 +119,7 @@ h4{
     font-size: 40pt;
     padding-top: 100px;
   }
-
-  .stars1{
-    width: 100px;
-    position: absolute;
-    top: 11%;
-    left: 30%;
-    transform: translate(-25%, 50%);
-    max-width: 100%;
-  }
-
-  .stars2{
-    width: 100px;
-    position: absolute;
-    top: 40%;
-    left: 65%;
-    transform: translate(-80%, 240%);
-    max-width: 100%;
-  }
+  
 }
+
 </style>

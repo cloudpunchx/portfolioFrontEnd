@@ -17,18 +17,14 @@
                         <v-list-item-icon>
                             <img src="../assets/github-mark-white.png" alt="github logo">
                         </v-list-item-icon>
-                        <v-list-item-title class="listItem" 
-                        style="font-size: 17pt; font-family: playfair; "
-                        >GitHub</v-list-item-title>
+                        <a class="listItem" href="https://github.com/cloudpunchx" target="blank">GitHub</a>
                     </v-list-item>
         
                     <v-list-item>
                         <v-list-item-icon>
                             <img src="../assets/In-White-72.png" alt="LinkedIn logo">
                         </v-list-item-icon>
-                        <v-list-item-title class="listItem" 
-                        style="font-size: 17pt; font-family: playfair;"
-                        >LinkedIn</v-list-item-title>
+                        <a class="listItem" href="https://www.linkedin.com/in/siobhanbonardi/" target="blank">LinkedIn</a>
                     </v-list-item>
                 </v-list-item-group>
             </v-list>
@@ -78,8 +74,14 @@
 }
 .listItem{
     color: whitesmoke;
+    font-size: 17pt;
+    font-family: playfair;
+    text-decoration: none;
 }
-
+.listItem:visited{
+    color: whitesmoke;
+    text-decoration: none;
+}
 .listItem:hover{
     color: #ffd819;
 }
@@ -97,7 +99,5 @@
     color: #ffd819;
 }
     
-@media only screen and (min-width: 1px) {
-    
-}
+
 </style>
