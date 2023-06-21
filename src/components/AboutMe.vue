@@ -18,7 +18,7 @@
                         <p class="paragraph">
                             I've always loved crafting by hand and creating digital designs using Adobe Illustrator, Adobe InDesign, and GIMP.
                             Since starting my full stack journey, I take pride in blending my design skills with technical knowledge to deliver captivating digital experiences.
-                            Creating well-rounded and efficient APIs, optimizing database queries, and designing sleek and modern UIs have become my passion. 
+                            Creating well-rounded and efficient APIs, optimizing database queries, and designing sleek and modern UIs has become my passion. 
                         </p>
                         <p class="paragraph">I <span class="intro">love</span> traveling, summers in Italy are my favourite! 
                             When I'm not traveling, I like gaming with my husband, watching horror movies, and thrifting.

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="welcomeContainer">
             <h3>Let's chat.</h3>
-            <p>Feel free to get in touch with me to request a copy of my resume or to initiate a conversation about your project, aiming to collaborate and generate a quote.
+            <p>Feel free to get in touch with me to request a copy of my resume or to initiate a conversation about your project.
                 You can also reach out to me directly via email at <a class="email" href="mailto:siobhanbonardi@gmail.com">siobhanbonardi@gmail.com</a></p>
         </div>
 
