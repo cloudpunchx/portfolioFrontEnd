@@ -1,5 +1,7 @@
 <template>
     <div>
+
+        <!-- Nav Drawer for Tablet/Mobile (smaller screens) -->
         <v-navigation-drawer
         class="navDrawer"
         v-model="drawer"
@@ -30,7 +32,9 @@
             </v-list>
         </v-navigation-drawer>
         
+        <!-- Nav bar -->
         <v-app-bar app color="secondary" >
+            <!-- Only show Icon when it isMobile -->
             <v-app-bar-nav-icon v-show="isMobile" @click="toggleDrawer"></v-app-bar-nav-icon>
     
             <v-spacer></v-spacer>

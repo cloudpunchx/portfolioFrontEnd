@@ -2,6 +2,11 @@
     <div>
         <div class="container">
             <v-container>
+                <v-row>
+                    <v-col>
+                        <h3>Projects</h3>
+                    </v-col>
+                </v-row>
                 <v-row dense>
                     <v-col
                     cols="12"
@@ -173,6 +178,12 @@ p {
 
 @media only screen and (min-width: 1px){
 /* Breakpoint for Mobile */
+    h3 {
+        font-size: 3rem;
+        font-family: lobster;
+        margin-bottom: 25px;
+        color: whitesmoke;
+    }
     .titleName{
         font-size: 3rem;
     }
@@ -186,9 +197,12 @@ p {
 
 @media only screen and (min-width: 600px){
 /* Breakpoint for Tablet */
+    h3 {
+        font-size: 3.2rem;
+    }
     .container {
         display: flex;
-        padding: 50px;
+        padding: 25px;
         flex-wrap: wrap;
     }
 
@@ -199,7 +213,9 @@ p {
 
 @media only screen and (min-width: 800px){
 /* Breakpoint for Desktop */
-
+    h3 {
+        font-size: 3.5rem;
+    }
     .titleName{
         font-size: 3rem;
     }

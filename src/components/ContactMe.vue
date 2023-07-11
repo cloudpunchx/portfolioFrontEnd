@@ -19,12 +19,13 @@
                             color="white"
                             v-model="name"
                             label="Name"
-                            background-color="rgba(247, 244, 234, 0.5)"
+                            background-color="rgba(247, 244, 234, 0.3)"
                             required
                             filled
                             clearable
                             outlined
                             shaped
+                            dark
                             ></v-text-field>
                             </v-col>
 
@@ -36,12 +37,13 @@
                             color="white"
                             v-model="email"
                             label="E-mail"
-                            background-color="rgba(247, 244, 234, 0.5)"
+                            background-color="rgba(247, 244, 234, 0.3)"
                             required
                             filled
                             clearable
                             outlined
                             shaped
+                            dark
                             ></v-text-field>
                             </v-col>
 
@@ -53,11 +55,12 @@
                             color="white"
                             v-model="company"
                             label="Company (Optional)"
-                            background-color="rgba(247, 244, 234, 0.5)"
+                            background-color="rgba(247, 244, 234, 0.3)"
                             filled
                             clearable
                             outlined
                             shaped
+                            dark
                             ></v-text-field>
                             </v-col>
 
@@ -70,7 +73,7 @@
                             v-model="message"
                             :value="message"
                             label="Message"
-                            background-color="rgba(247, 244, 234, 0.5)"
+                            background-color="rgba(247, 244, 234, 0.3)"
                             placeholder="Enter Your Message" 
                             cols="50" 
                             rows="5" 
@@ -78,6 +81,7 @@
                             clearable
                             outlined
                             shaped
+                            dark
                             ></v-textarea>
                             </v-col>
 
@@ -160,13 +164,10 @@ import axios from "axios";
 
 <style scoped>
 
-/* The position and overflow are for the animation on the email */
 .email{
     color: whitesmoke;
     text-decoration: none;
     transition: font-size 0.2s;
-    position: relative;
-    overflow: hidden;
 }
 
 @media (min-width: 1px) {
@@ -249,34 +250,6 @@ import axios from "axios";
     }
     .email:active{
         font-size: 1.6rem;
-    }
-
-    /* Animation for 'ripple' background color change effect on email link */
-    .email::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #C0B9DD;
-        animation: ripple 2s infinite;
-    }
-
-    /* Animation for 'ripple' background color change effect on email link */
-    @keyframes ripple {
-        0% {
-            transform: scale(0);
-            opacity: 1;
-        }
-        50% {
-            transform: scale(2);
-            opacity: 0;
-        }
-        100% {
-            transform: scale(3);
-            opacity: 0;
-        }
     }
 
     .v-btn{
