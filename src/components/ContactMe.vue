@@ -167,7 +167,6 @@ import axios from "axios";
 .email{
     color: whitesmoke;
     text-decoration: none;
-    transition: font-size 0.2s;
 }
 
 @media (min-width: 1px) {
@@ -175,11 +174,7 @@ import axios from "axios";
         font-size: 1.2rem;
     }
     .email:hover{
-        font-size: 1.3rem;
         color: #ffd819;
-    }
-    .email:active{
-        font-size: 1.3rem;
     }
 
     .container {
@@ -245,20 +240,11 @@ import axios from "axios";
         display: inline-block;
     }
     .email:hover{
-        font-size: 1.6rem;
         color: #ffd819;
-    }
-    .email:active{
-        font-size: 1.6rem;
     }
 
     .v-btn{
         font-size: 1.3rem;
-    }
-
-    .v-btn:hover{
-        font-size: 1.4rem;
-        width: 165px;
     }
 
     .container {

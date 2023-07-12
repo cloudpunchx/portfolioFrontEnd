@@ -2,7 +2,7 @@
     <v-footer class="text-center d-flex flex-column">
         <div>
             <p class="text">
-                <a class="link" href="https://github.com/cloudpunchx" target="blank">Github</a> | 
+                <a class="link" href="https://github.com/cloudpunchx" target="blank">GitHub</a> | 
                 <a class="link" href="https://www.linkedin.com/in/siobhanbonardi/" target="blank">LinkedIn</a> | 
                 <a class="link" href="mailto:siobhanbonardi@gmail.com">siobhanbonardi@gmail.com</a> |
                 © 2023 | Web Design by Siobhan Bonardi 
@@ -29,7 +29,6 @@
 
 .link:hover{
     color: #FF7E6B;
-    font-size: 16pt;
 }
 
 @media (min-width: 1px) {

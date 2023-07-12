@@ -4,10 +4,10 @@
             <v-container>
                 <v-row>
                     <v-col>
-                        <h3>Projects</h3>
+                        <h3>Projects | <span><a class="h3Link" href="https://github.com/cloudpunchx" target="_blank">Full GitHub</a></span></h3>
                     </v-col>
                 </v-row>
-                <v-row dense>
+                <v-row>
                     <v-col
                     cols="12"
                     sm="12"
@@ -28,7 +28,7 @@
                             <div class="contentContainer">
                                 <h6><a class="titleName" href="https://cloudpunchd.cloudpunch.ca/#/" target="_blank">Cloudpunchd</a></h6>
                                 <p class="subHeading">a movie tracking site | march 2023 - present</p>
-                                <p class="subHeading subHeading2">Javascript | Vue.js | Vuetify | HTML | CSS | SCSS | Python | Flask | MariaDB | SQL | Apache | PM2</p>
+                                <p class="subHeading subHeading2">JavaScript | Vue.js | Vuetify | HTML | CSS | SCSS | Python | Flask | MariaDB | SQL | Apache | PM2</p>
                                 <p class="description">This website is based on Letterboxd, a website for making lists, tracking watched movies and sharing with friends.
                                     Cloudpunchd allows users to log-in/sign-up to their own personal profile. Users can then add movies to a Watch List, mark as Watched, and write reviews.
                                 </p>
@@ -60,7 +60,7 @@
                             <div class="contentContainer">
                                 <h6><a class="titleName" href="https://cloudpunch.ca/#/" target="_blank">Portfolio</a></h6>
                                 <p class="subHeading">my portfolio | may 2023 - present</p>
-                                <p class="subHeading subHeading2">Javascript | Vue.js | Vuetify | HTML | CSS | SCSS | Python | Flask | MariaDB | SQL | Apache | PM2</p>
+                                <p class="subHeading subHeading2">JavaScript | Vue.js | Vuetify | HTML | CSS | SCSS | Python | Flask | MariaDB | SQL | Apache | PM2</p>
                                 <p class="description">My personal portfolio website where you can view my work and contact me.</p>
                                 <p><a class="githubLink" href="https://github.com/cloudpunchx/portfolioFrontEnd" target="_blank">Front End Code | GitHub</a></p>
                                 <p class="githubLink2"><a class="githubLink" href="https://github.com/cloudpunchx/portfoliobackend.git" target="_blank">Back End Code | GitHub</a></p>
@@ -90,7 +90,7 @@
                             <div class="contentContainer">
                                 <h6><a class="titleName" href="https://calculator.cloudpunch.ca/#/" target="_blank">Calculator</a></h6>
                                 <p class="subHeading">calculator | june 2023</p>
-                                <p class="subHeading subHeading2">Javascript | Vue.js | Vuetify | HTML | CSS | SCSS | Apache | PM2</p>
+                                <p class="subHeading subHeading2">JavaScript | Vue.js | Vuetify | HTML | CSS | SCSS | Apache | PM2</p>
                                 <p class="description">A simple calculator.</p>
                                 <p><a class="githubLink" href="https://github.com/cloudpunchx/simplecalculator.git" target="_blank">Front End Code | GitHub</a></p>
                                 <p><a class="websiteLink" href="https://calculator.cloudpunch.ca/#/" target="_blank">calculator.cloudpunch.ca</a></p>
@@ -115,6 +115,10 @@
 /* Align content in v-cards */
 .container {
     text-align: center;
+}
+
+.h3Link{
+    color: whitesmoke;
 }
 
 a {
@@ -178,11 +182,16 @@ p {
 
 @media only screen and (min-width: 1px){
 /* Breakpoint for Mobile */
-    h3 {
+    h3{
         font-size: 3rem;
         font-family: lobster;
         margin-bottom: 25px;
         color: whitesmoke;
+    }
+    .container {
+        display: flex;
+        padding: 25px;
+        flex-wrap: wrap;
     }
     .titleName{
         font-size: 3rem;
@@ -199,11 +208,6 @@ p {
 /* Breakpoint for Tablet */
     h3 {
         font-size: 3.2rem;
-    }
-    .container {
-        display: flex;
-        padding: 25px;
-        flex-wrap: wrap;
     }
 
     .v-col {

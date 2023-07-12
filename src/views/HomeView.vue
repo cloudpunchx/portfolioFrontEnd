@@ -15,13 +15,17 @@
       </div>
     </section>
 
-    <section class="projectWork">
-      <ProjectWork/>
+    <section class="skillsSection">
+      <SkillsSection/>
     </section>
 
     <section class="aboutMe">
       <AboutMe/>
     </section>
+
+    <section class="projectWork">
+      <ProjectWork/>
+    </section> 
 
     <section class="contactForm">
       <ContactMe/>
@@ -33,16 +37,18 @@
 
 <script>
 import NavigationBar from '@/components/NavigationBar.vue'
-import ProjectWork from '@/components/ProjectWork.vue'
 import AboutMe from '@/components/AboutMe.vue'
+import ProjectWork from '@/components/ProjectWork.vue'
+import SkillsSection from '@/components/SkillsSection.vue'
 import ContactMe from '@/components/ContactMe.vue'
 import FooterBar from '@/components/FooterBar.vue'
   export default {
     name: 'HomeView',
     components: {
       NavigationBar,
-      ProjectWork,
       AboutMe,
+      ProjectWork,
+      SkillsSection,
       ContactMe,
       FooterBar
     },
@@ -57,8 +63,6 @@ import FooterBar from '@/components/FooterBar.vue'
 .container {
   position: relative;
   text-align: center;
-  color: #C0B9DD;
-  font-size: 40pt;
   padding-top: 100px;
   font-family: playfairDisplay;
 }
@@ -72,17 +76,18 @@ h4{
 }
 
 .paragraph {
+  color: #C0B9DD;
   margin: 0;
   padding: 0;
 }
 
-.projectWork{
-  margin-top: 250px;
-  background-color: #C0B9DD;
+.aboutMe, .skillsSection{
+  background-color: #F7F4EA;
+  margin-top: 50px;
 }
 
-.aboutMe{
-  background-color: #F7F4EA;
+.projectWork{
+  background-color: #C0B9DD;
 }
 
 .contactForm{
@@ -96,7 +101,7 @@ h4{
   }
 
   .container {
-    font-size: 30pt;
+    font-size: 25pt;
     padding-top: 80px;
   }
 
