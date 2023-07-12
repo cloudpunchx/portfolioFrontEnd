@@ -6,6 +6,7 @@
                 cols="12"
                 sm="12"
                 lg="6"
+                class="imgColumn"
                 >
                     <div class="imgContainer">
                         <v-img
@@ -43,11 +44,16 @@ export default {
 
 <style scoped>
 
+    .imgColumn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .imgContainer {
         background-color: #f7f4ea;
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
 
     .intro{
@@ -99,9 +105,22 @@ export default {
         .profileImg {
             max-width: 450px;
         }
+        .imgContainer{
+            padding-right: 50px;
+        }
         .profileContainer{
             width: 80%;
-            /* padding: 50px; */
+            padding: 50px;
+        }
+    }
+
+    @media (min-width: 2000px) {
+        .imgContainer{
+            padding-right: 50px;
+        }
+        .profileContainer{
+            width: 55%;
+            padding: 50px;
         }
     }
 
