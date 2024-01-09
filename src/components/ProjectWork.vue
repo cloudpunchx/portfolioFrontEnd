@@ -22,7 +22,7 @@
                             <v-card-title class="justify-center">
                                 <a
                                     class="titleName linkHover"
-                                    href="https://cloudpunchd.cloudpunch.ca/#/"
+                                    href="https://cloudbookd.cloudpunch.ca/#/"
                                     target="_blank"
                                     >Cloudbookd</a
                                 ></v-card-title
