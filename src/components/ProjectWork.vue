@@ -28,10 +28,7 @@
                                 ></v-card-title
                             >
                             <v-card-text>
-                                <p class="subHeading">
-                                    a reading tracker site | october 2023 -
-                                    present
-                                </p>
+                                <p class="subHeading">a reading tracker site</p>
                                 <p class="subHeading">
                                     JavaScript | Vue.js | Vuetify | HTML | CSS |
                                     SCSS | Python | Flask | MariaDB | SQL |
@@ -84,9 +81,7 @@
                                 ></v-card-title
                             >
                             <v-card-text>
-                                <p class="subHeading">
-                                    a movie tracking site | march 2023 - present
-                                </p>
+                                <p class="subHeading">a movie tracking site</p>
                                 <p class="subHeading">
                                     JavaScript | Vue.js | Vuetify | HTML | CSS |
                                     SCSS | Python | Flask | MariaDB | SQL |
@@ -148,7 +143,7 @@
                             >
                             <v-card-text>
                                 <p class="subHeading">
-                                    my portfolio | may 2023 - present
+                                    my portfolio | may 2023
                                 </p>
                                 <p class="subHeading">
                                     JavaScript | Vue.js | Vuetify | HTML | CSS |
