@@ -71,7 +71,7 @@
         position: relative;
         text-align: center;
         padding-top: 100px;
-        font-family: playfairDisplay;
+        font-family: Georgia, "Times New Roman", Times, serif;
     }
 
     h4 {
@@ -112,10 +112,6 @@
             font-size: 25pt;
             padding-top: 80px;
         }
-    }
-
-    @media only screen and (min-width: 500px) {
-        /* Breakpoint for Tablet */
     }
 
     @media only screen and (min-width: 800px) {

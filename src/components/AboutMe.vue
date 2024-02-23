@@ -52,9 +52,6 @@
 <style scoped>
     .imgContainer {
         background-color: #f7f4ea;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
     }
 
     .intro {
@@ -79,7 +76,7 @@
         .paragraph {
             color: #ff7e6b;
             font-size: 15pt;
-            font-family: playfair;
+            font-family: Georgia, "Times New Roman", Times, serif;
         }
 
         .profileContainer {
