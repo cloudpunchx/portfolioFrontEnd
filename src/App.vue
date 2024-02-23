@@ -1,27 +1,19 @@
 <template>
-  <v-app>
-    <v-main>
-      <router-view/>
-    </v-main>
-  </v-app>
+    <v-app>
+        <v-main>
+            <router-view />
+        </v-main>
+    </v-app>
 </template>
 
 <script>
-
-export default {
-  name: 'App',
-
-  data: () => ({
-    //
-  }),
-};
+    export default {
+        name: "App",
+    };
 </script>
 
 <style scoped>
-html{
-  background-color: #F7F4EA;
-}
+    html {
+        background-color: #f7f4ea;
+    }
 </style>
-
-<!-- documentation, layout v-app v-main -->
-<!-- https://v2.vuetifyjs.com/en/features/layouts/#usage -->

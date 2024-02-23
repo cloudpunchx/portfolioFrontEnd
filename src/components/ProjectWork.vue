@@ -1,80 +1,78 @@
 <template>
     <div>
-        <div>
-            <v-container class="container">
-                <v-row>
-                    <v-col>
-                        <h3>
-                            Projects |
-                            <a
-                                class="h3Link"
-                                href="https://github.com/cloudpunchx"
-                                target="_blank"
-                                >GitHub</a
-                            >
-                        </h3>
-                    </v-col>
-                </v-row>
+        <v-container class="projectsContainer">
+            <v-row>
+                <v-col>
+                    <h3>
+                        Projects |
+                        <a
+                            class="whiteText"
+                            href="https://github.com/cloudpunchx"
+                            target="_blank"
+                            >GitHub</a
+                        >
+                    </h3>
+                </v-col>
+            </v-row>
 
-                <v-row>
-                    <v-col
-                        v-for="(project, i) in projects"
-                        :key="i"
-                        cols="12"
-                        sm="6"
-                        md="6"
-                        lg="6"
-                    >
-                        <v-card shaped elevation="5">
-                            <v-img :src="project.previewImg"> </v-img>
-                            <v-card-title class="justify-center">
+            <v-row>
+                <v-col
+                    v-for="(project, i) in projects"
+                    :key="i"
+                    cols="12"
+                    sm="6"
+                    md="6"
+                    lg="6"
+                >
+                    <v-card color="background" shaped elevation="5">
+                        <v-img :src="project.previewImg"> </v-img>
+                        <v-card-title class="justify-center">
+                            <a
+                                class="titleName"
+                                :href="project.siteUrl"
+                                target="_blank"
+                                >{{ project.title }}</a
+                            ></v-card-title
+                        >
+                        <v-card-text>
+                            <p class="subHeading">
+                                {{ project.subHeading }}
+                            </p>
+                            <p class="subHeading">
+                                {{ project.skillsUsed.join(" | ") }}
+                            </p>
+                            <p class="description">
+                                {{ project.description }}
+                            </p>
+                            <p>
                                 <a
-                                    class="titleName linkHover"
+                                    class="githubLink"
+                                    :href="project.githubFrontEnd"
+                                    target="_blank"
+                                    >Front End Code | GitHub</a
+                                >
+                            </p>
+                            <p v-if="project.githubBackEnd">
+                                <a
+                                    class="githubLink"
+                                    :href="project.githubBackEnd"
+                                    target="_blank"
+                                    >Back End Code | GitHub</a
+                                >
+                            </p>
+                            <p>
+                                <a
+                                    class="websiteLink"
                                     :href="project.siteUrl"
                                     target="_blank"
-                                    >{{ project.title }}</a
-                                ></v-card-title
-                            >
-                            <v-card-text>
-                                <p class="subHeading">
-                                    {{ project.subHeading }}
-                                </p>
-                                <p class="subHeading">
-                                    {{ project.skillsUsed.join(" | ") }}
-                                </p>
-                                <p class="description">
-                                    {{ project.description }}
-                                </p>
-                                <p>
-                                    <a
-                                        class="githubLink linkHover"
-                                        :href="project.githubFrontEnd"
-                                        target="_blank"
-                                        >Front End Code | GitHub</a
-                                    >
-                                </p>
-                                <p class="githubLink2">
-                                    <a
-                                        class="githubLink linkHover"
-                                        :href="project.githubBackEnd"
-                                        target="_blank"
-                                        >Back End Code | GitHub</a
-                                    >
-                                </p>
-                                <p>
-                                    <a
-                                        class="websiteLink linkHover"
-                                        :href="project.siteUrl"
-                                        target="_blank"
-                                        >{{ project.siteUrl }}</a
-                                    >
-                                </p>
-                            </v-card-text>
-                        </v-card>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </div>
+                                    >{{ project.siteUrl }}</a
+                                >
+                            </p>
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+            </v-row>
+        </v-container>
     </div>
 </template>
 
@@ -93,6 +91,7 @@
                             "JavaScript",
                             "Vue.js",
                             "Vuetify",
+                            "Three.js",
                             "HTML",
                             "CSS",
                             "Python",
@@ -181,7 +180,9 @@
 </script>
 
 <style scoped>
-    .container {
+    .projectsContainer {
+        color: whitesmoke;
+        font-family: Georgia, "Times New Roman", Times, serif;
         padding: 25px;
         text-align: center;
     }
@@ -189,16 +190,13 @@
     h3 {
         font-size: 2rem;
         font-family: Georgia, "Times New Roman", Times, serif;
-        color: whitesmoke;
     }
 
-    .h3Link {
+    .whiteText {
         color: whitesmoke;
-        font-family: Georgia, "Times New Roman", Times, serif;
     }
 
     .v-card {
-        background-color: #f7f4ea;
         height: 100%;
     }
 
@@ -207,46 +205,26 @@
     }
 
     a {
-        font-family: Georgia, "Times New Roman", Times, serif;
         text-decoration: none;
     }
 
+    .subHeading,
     .description {
-        font-family: Georgia, "Times New Roman", Times, serif;
         font-size: 1.2rem;
         color: #7e72af;
     }
 
     .subHeading {
-        color: #7e72af;
-        font-size: 1.1rem;
-        font-family: Georgia, "Times New Roman", Times, serif;
         font-weight: bold;
     }
 
     .githubLink {
         font-size: 1.2rem;
-        font-family: Georgia, "Times New Roman", Times, serif;
         color: #7e72af;
-    }
-
-    .githubLink2 {
-        margin-top: -4%;
-    }
-
-    .bottomBorder {
-        border-bottom: 2px solid #c0b9dd;
     }
 
     .websiteLink {
         font-size: 1.2rem;
-    }
-
-    @media only screen and (min-width: 600px) {
-        /* Breakpoint for Tablet */
-        h3 {
-            font-size: 3rem;
-        }
     }
 
     @media only screen and (min-width: 800px) {

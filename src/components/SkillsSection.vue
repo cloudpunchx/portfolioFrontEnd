@@ -1,83 +1,64 @@
 <template>
     <div class="container">
-        <v-card
-        class="card"
-        shaped
-        elevation="5"
-        color="#FF7E6B"
-        >
-            <v-container>
-                <v-row>
-                    <v-col
-                    >
-                        <h3>Skills</h3>
-                    </v-col>
-                </v-row>
-                <v-row>
-                    <v-col
-                    >
-                        <p class="skills">HTML | CSS | JavaScript | Vue.js | Python | Flask | Apache | MariaDB</p>
-                    </v-col>
-                </v-row>
-            </v-container>
+        <v-card color="primary" elevation="5" shaped dark>
+            <v-row>
+                <v-col>
+                    <h3>Skills</h3>
+                </v-col>
+            </v-row>
+            <v-row justify="center">
+                <v-col v-for="(skill, i) in skills" :key="i" cols="auto">
+                    <p class="skills">{{ skill }}</p>
+                </v-col>
+            </v-row>
         </v-card>
     </div>
 </template>
 
 <script>
     export default {
-        name: "SkillsSection"
-    }
+        name: "SkillsSection",
+        data() {
+            return {
+                skills: [
+                    "HTML",
+                    "CSS",
+                    "SCSS",
+                    "JavaScript",
+                    "Vue.js",
+                    "React",
+                    "Python",
+                    "Flask",
+                    "MariaDB",
+                    "DBeaver",
+                    "Apache",
+                    "Vuetify",
+                ],
+            };
+        },
+    };
 </script>
 
 <style scoped>
-
-    @media only screen and (min-width: 1px){
-    /* Breakpoint for Mobile */
-
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        h3{
-            font-size: 3rem;
-            font-family: lobster;
-            color: whitesmoke;
-        }
-
-        .skills{
-            color: whitesmoke;
-            font-size: 15pt;
-        }
+    h3 {
+        font-size: 2.5rem;
+        font-family: lobster;
     }
-    @media only screen and (min-width: 600px){
-    /* Breakpoint for Tablet */ 
-        .container{
+
+    .skills {
+        font-size: 1.2rem;
+    }
+
+    @media only screen and (min-width: 600px) {
+        /* Breakpoint for Tablet */
+        .container {
             width: 80vw;
-            display: flex;
-            flex-wrap: wrap;
         }
-
-        h3 {
-            font-size: 3.2rem;
-        }
-
-        .skills{
-            font-size: 17pt;
-        }
-
     }
-    @media only screen and (min-width: 800px){
-    /* Breakpoint for Desktop */
-        .container{
-                width: 50vw;
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-        h3 {
-            font-size: 3.5rem;
+    @media only screen and (min-width: 800px) {
+        /* Breakpoint for Desktop */
+        .container {
+            width: 55vw;
         }
     }
 </style>

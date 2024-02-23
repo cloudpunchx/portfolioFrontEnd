@@ -45,7 +45,7 @@
         </v-navigation-drawer>
 
         <!-- Nav bar -->
-        <v-app-bar app color="secondary">
+        <v-app-bar app color="secondary" dark>
             <!-- Only show Icon when it isMobile -->
             <v-app-bar-nav-icon
                 v-show="isMobile"
