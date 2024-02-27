@@ -20,56 +20,67 @@
                     v-for="(project, i) in projects"
                     :key="i"
                     cols="12"
-                    sm="6"
-                    md="6"
-                    lg="6"
+                    sm="12"
+                    md="12"
+                    lg="12"
                 >
-                    <v-card color="background" shaped elevation="5">
-                        <v-img :src="project.previewImg"> </v-img>
-                        <v-card-title class="justify-center">
-                            <a
-                                class="titleName"
-                                :href="project.siteUrl"
-                                target="_blank"
-                                >{{ project.title }}</a
-                            ></v-card-title
-                        >
-                        <v-card-text>
-                            <p class="subHeading">
-                                {{ project.subHeading }}
-                            </p>
-                            <p class="subHeading">
-                                {{ project.skillsUsed.join(" | ") }}
-                            </p>
-                            <p class="description">
-                                {{ project.description }}
-                            </p>
-                            <p>
-                                <a
-                                    class="githubLink"
-                                    :href="project.githubFrontEnd"
-                                    target="_blank"
-                                    >Front End Code | GitHub</a
-                                >
-                            </p>
-                            <p v-if="project.githubBackEnd">
-                                <a
-                                    class="githubLink"
-                                    :href="project.githubBackEnd"
-                                    target="_blank"
-                                    >Back End Code | GitHub</a
-                                >
-                            </p>
-                            <p>
-                                <a
-                                    class="websiteLink"
-                                    :href="project.siteUrl"
-                                    target="_blank"
-                                    >{{ project.siteUrl }}</a
-                                >
-                            </p>
-                        </v-card-text>
+                    <v-card color="transparent" shaped flat>
+                        <v-row>
+                            <v-col sm="6" md="6" lg="6" xl="5">
+                                <v-img
+                                    :src="project.previewImg"
+                                    alt="Project Image"
+                                    class="image"
+                                ></v-img>
+                            </v-col>
+                            <v-col sm="6" md="6" lg="6" xl="7">
+                                <v-card-title class="justify-center">
+                                    <a
+                                        class="titleName"
+                                        :href="project.siteUrl"
+                                        target="_blank"
+                                        >{{ project.title }}</a
+                                    >
+                                </v-card-title>
+                                <v-card-text>
+                                    <p class="subHeading">
+                                        {{ project.subHeading }}
+                                    </p>
+                                    <p class="subHeading">
+                                        {{ project.skillsUsed.join(" | ") }}
+                                    </p>
+                                    <p class="description">
+                                        {{ project.description }}
+                                    </p>
+                                    <p>
+                                        <a
+                                            class="websiteLink"
+                                            :href="project.githubFrontEnd"
+                                            target="_blank"
+                                            >Front End Code | GitHub</a
+                                        >
+                                    </p>
+                                    <p v-if="project.githubBackEnd">
+                                        <a
+                                            class="websiteLink"
+                                            :href="project.githubBackEnd"
+                                            target="_blank"
+                                            >Back End Code | GitHub</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a
+                                            class="websiteLink"
+                                            :href="project.siteUrl"
+                                            target="_blank"
+                                            >{{ project.siteUrl }}</a
+                                        >
+                                    </p>
+                                </v-card-text>
+                            </v-col>
+                        </v-row>
                     </v-card>
+                    <v-divider></v-divider>
                 </v-col>
             </v-row>
         </v-container>
@@ -81,7 +92,6 @@
         name: "ProjectWork",
         data() {
             return {
-                // WRITE IN TEST LOGIN SO PEOPLE CAN USE IT?
                 projects: [
                     {
                         previewImg: require("@/assets/cloudbookdSS.jpg"),
@@ -156,23 +166,6 @@
                             "https://github.com/cloudpunchx/portfoliobackend.git",
                         siteUrl: "https://cloudpunch.ca/#/",
                     },
-                    {
-                        previewImg: require("../assets/calculatorImg.jpg"),
-                        title: "Simple Calculator",
-                        subHeading: "calculator | june 2023",
-                        skillsUsed: [
-                            "JavaScript",
-                            "Vue.js",
-                            "Vuetify",
-                            "HTML",
-                            "CSS",
-                        ],
-                        description: "A simple calculator.",
-                        githubFrontEnd:
-                            "https://github.com/cloudpunchx/simplecalculator.git",
-                        githubBackEnd: "",
-                        siteUrl: "https://calculator.cloudpunch.ca/#/",
-                    },
                 ],
             };
         },
@@ -189,19 +182,21 @@
 
     h3 {
         font-size: 2rem;
-        font-family: Georgia, "Times New Roman", Times, serif;
     }
 
     .whiteText {
         color: whitesmoke;
     }
 
-    .v-card {
-        height: 100%;
+    .image {
+        border: 2px solid silver;
+        max-width: 500px;
     }
 
     .titleName {
         font-size: 2rem;
+        color: rgb(53, 32, 95);
+        font-weight: bold;
     }
 
     a {
@@ -211,33 +206,27 @@
     .subHeading,
     .description {
         font-size: 1.2rem;
-        color: #7e72af;
+        color: rgb(53, 32, 95);
     }
 
     .subHeading {
         font-weight: bold;
     }
 
-    .githubLink {
-        font-size: 1.2rem;
-        color: #7e72af;
-    }
-
     .websiteLink {
         font-size: 1.2rem;
+        color: rgb(53, 32, 95);
     }
 
     @media only screen and (min-width: 800px) {
-        /* Breakpoint for Desktop */
         .container {
             max-width: 80vw;
         }
     }
 
     @media only screen and (min-width: 1260px) {
-        /* Breakpoint for Desktop */
         .container {
-            max-width: 50vw;
+            max-width: 60vw;
         }
     }
 </style>
