@@ -49,6 +49,7 @@
     import SkillsSection from "@/components/SkillsSection.vue";
     import ContactMe from "@/components/ContactMe.vue";
     import FooterBar from "@/components/FooterBar.vue";
+
     export default {
         name: "HomeView",
         components: {
@@ -65,6 +66,8 @@
 <style scoped>
     .background {
         height: 100%;
+        position: relative;
+        z-index: 0;
     }
 
     .container {

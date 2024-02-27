@@ -151,11 +151,11 @@
     .container {
         color: whitesmoke;
         padding-bottom: 60px;
-        max-width: 60vw;
+        max-width: 80vw;
         margin: auto;
     }
     .email {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: whitesmoke;
         text-decoration: none;
     }
@@ -164,17 +164,27 @@
     }
 
     h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-family: lobster;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .v-btn {
         font-size: 1rem;
         color: #7e72af;
+    }
+
+    @media (min-width: 800px) {
+        /* Tablet Size */
+        .container {
+            max-width: 60vw;
+        }
+        h3 {
+            font-size: 3rem;
+        }
     }
 
     @media (min-width: 1100px) {

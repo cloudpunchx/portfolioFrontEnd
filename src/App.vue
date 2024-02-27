@@ -12,8 +12,4 @@
     };
 </script>
 
-<style scoped>
-    html {
-        background-color: #f7f4ea;
-    }
-</style>
+<style scoped></style>

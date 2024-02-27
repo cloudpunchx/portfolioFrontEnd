@@ -7,13 +7,13 @@ const vuetify = new Vuetify({
     theme: {
         themes: {
             light: {
-                // off-white (yellowish tone)
+                // cream
                 background: "#F7F4EA",
 
-                // pink
+                // soft coral
                 primary: "#ff7e6b",
 
-                // purple
+                // soft lavender
                 secondary: "#C0B9DD",
 
                 // darker purple (primarily text)
